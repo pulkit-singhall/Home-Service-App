@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">HomeService</string>
+
+    // created strings
+    <string name="main_intro">Your One Stop App For Best Home Services</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="register_btn">REGISTER</string>
+    <string name="new_user">Don\'t Have An Account?</string>
+    <string name="home">HOME</string>
+    <string name="categories">CATEGORIES</string>
+    <string name="view_all">VIEW ALL</string>
+    <string name="best_deals">BEST DEALS</string>
+    <string name="search">Search By Category</string>
+    <string name="rating">Rating</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="add_cart">Add To Cart</string>
+    <string name="features">Key Features</string>
+    <string name="trust">Trusted and Skilled Workers</string>
+    <string name="cancel">Cancellation Policy</string>
+    <string name="pay">Pay After Complete Work</string>
+    <string name="flexible">Flexible Time Slots</string>
+    <string name="slot">CHOOSE SLOT</string>
+    <string name="total_price">Total Price</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="time_slot">No Slot Chosen</string>
+    <string name="zero">Rs. 0</string>
+    <string name="signIn">Login to continue</string>
+</resources>
