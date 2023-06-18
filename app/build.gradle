@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId "com.example.homeservice"
         minSdk 24
-        targetSdk 33
+        targetSdk 30
         versionCode 1
         versionName "1.0"
 
@@ -46,4 +46,7 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // FOR RAZORPAY GATEWAY
+    implementation 'com.razorpay:checkout:1.6.12'
 }
