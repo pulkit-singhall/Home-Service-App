@@ -1,9 +1,12 @@
 package com.example.homeservice.activities
 
+import android.content.DialogInterface
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.homeservice.R
 import com.example.homeservice.adapters.CartAdapter
 import com.example.homeservice.databinding.ActivityCartBinding
 import com.example.homeservice.model.CartData
@@ -33,8 +36,18 @@ class CartActivity : AppCompatActivity(), PaymentResultListener {
         Checkout.preload(this)
 
         bind.checkout.setOnClickListener {
-            Toast.makeText(this,"Thanks For Ordering!",Toast.LENGTH_SHORT).show()
-            payments()
+            // ALERT DIALOG BOX
+            val dialog = AlertDialog.Builder(this)
+            dialog.setTitle("Are You Sure?")
+            dialog.setMessage("Do you want to continue to Payment?")
+            dialog.setIcon(R.drawable.payment_method)
+            dialog.setPositiveButton("YES", DialogInterface.OnClickListener{dialogInterface, i ->
+                Toast.makeText(this,"Happy Shopping!",Toast.LENGTH_SHORT).show()
+                payments()
+            })
+            dialog.setNegativeButton("NO",DialogInterface.OnClickListener{dialogInterface, i ->
+
+            })
         }
 
         // CART DATA LOADING
