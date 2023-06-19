@@ -48,6 +48,7 @@ class CartActivity : AppCompatActivity(), PaymentResultListener {
             dialog.setNegativeButton("NO",DialogInterface.OnClickListener{dialogInterface, i ->
 
             })
+            dialog.show()
         }
 
         // CART DATA LOADING
